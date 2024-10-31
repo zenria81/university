@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ciftsayiort"/>
+        <attribute name="authors" value="zenria81"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-01 12:36:37 &#214;&#214;"/>
+        <attribute name="created" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTsxMjozMzo0OSDDlsOWOzMwOTY="/>
+        <attribute name="edited" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTsxMjozNDo0OSDDlsOWOzE7emVucmlhODE7U0FUVU5BSEFOWlQyQzFBOzIwMjQtMTAtMzE7MDg6MjU6MDAgw5ZTO3Rla3NheWlvcnQuZnByZzs4MTQ5"/>
+        <attribute name="edited" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTsxMjozNjozNyDDlsOWOzE7MzIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, sayac, sayi" type="Integer" array="False" size=""/>
+            <declare name="ortalama" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <output expression="&quot;&#231;ift sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi!=0">
+                <if expression="(sayi%2)==0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + sayi"/>
+                        <assign variable="sayac" expression="sayac + 1"/>
+                        <output expression="&quot;tekrar sayi giriniz&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;l&#252;tfen &#231;ift sayi giriniz&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="sayi"/>
+            </while>
+            <assign variable="ortalama" expression="toplam/sayac"/>
+            <output expression="&quot;&#231;ift sayilarin ortalamasi:&quot; &amp;ortalama" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

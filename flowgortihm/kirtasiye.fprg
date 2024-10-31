@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kirtasiye"/>
+        <attribute name="authors" value="zenria81"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-01 12:58:30 &#214;&#214;"/>
+        <attribute name="created" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTsxMjo0ODo0MCDDlsOWOzMwOTM="/>
+        <attribute name="edited" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTsxMjo1ODozMCDDlsOWOzE7MzIwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="adetkalem, fiyatkalem, adetdefter, fiyatdefter, adetsilgi, fiyatsilgi" type="Integer" array="False" size=""/>
+            <declare name="a, b, c, x, y, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;kalem,defter ve silgi birim fiyatlarini giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <output expression="&quot;kalem,defter ve silgi adetlerini giriniz&quot;" newline="True"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="z"/>
+            <assign variable="adetkalem" expression="a"/>
+            <assign variable="adetdefter" expression="b"/>
+            <assign variable="adetsilgi" expression="c"/>
+            <assign variable="fiyatkalem" expression="x"/>
+            <assign variable="fiyatdefter" expression="y"/>
+            <assign variable="fiyatsilgi" expression="z"/>
+            <declare name="toplamfiyat" type="Integer" array="False" size=""/>
+            <assign variable="toplamfiyat" expression="a*x+b*y+c*z"/>
+            <output expression="&quot;toplam ucret&quot; &amp;toplamfiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

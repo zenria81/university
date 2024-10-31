@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tekrar"/>
+        <attribute name="authors" value="zenria81"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-01 01:08:50 &#214;&#214;"/>
+        <attribute name="created" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTswMTowNDozMyDDlsOWOzMwODU="/>
+        <attribute name="edited" value="emVucmlhODE7TUFDQk9PSy1QUk87MjAyNC0xMS0wMTswMTowODo1MCDDlsOWOzE7MzE5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mesaj" type="String" array="False" size=""/>
+            <declare name="tekrar" type="Integer" array="False" size=""/>
+            <declare name="forloop" type="Integer" array="False" size=""/>
+            <output expression="&quot;yazmak istediginiz mesaji giriniz&quot;" newline="True"/>
+            <input variable="mesaj"/>
+            <output expression="&quot;kac kere tekrar etmek istiyorsunuz&quot;" newline="True"/>
+            <input variable="tekrar"/>
+            <for variable="forloop" start="1" end="tekrar" direction="inc" step="1">
+                <output expression="mesaj" newline="True"/>
+            </for>
+            <output expression="&quot;istediginiz miktarda mesaj yaz&#305;ld&#305;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
